@@ -24,6 +24,7 @@ namespace BB8_Robot
 
         public void Crtaj(Graphics g)
         {
+            
             g.DrawLine(olovka, x, y - a / 4, x, y - 3 * a / 8);
             g.FillPie(new SolidBrush(Color.White), x - a / 4, y - a / 4, a / 2, a / 2, 0, -180);
             g.DrawArc(olovka, x - a / 4, y - a / 4, a / 2, a / 2, 0, -180);
@@ -45,7 +46,6 @@ namespace BB8_Robot
                 crvena = rand.Next(256);
                 plava = rand.Next(256);
                 zelena = rand.Next(256);
-
                 cetka.Color = Color.FromArgb(crvena, plava, zelena);
             }
         }

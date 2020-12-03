@@ -27,11 +27,10 @@ namespace BB8_Robot
             dx = x - px;
             dy = y - py;
 
-            for(int i = 0; i < roboti.Length; i++)
+            for (int i = 0; i < roboti.Length; i++)
                 if (dx != 0 || dy != 0)
                     roboti[i].Pomeri(dx, dy, true);
-            
-
+           
             px = x;
             py = y;
             if (dx != 0 || dy != 0)
